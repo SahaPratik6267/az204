@@ -17,6 +17,8 @@ def list_products():
         # Retrieve the Azure SQL Database connection string from the environment variable
         connection_string = os.environ.get('connectionString')
 
+        print("Azure SQL Database Connection String:", connection_string)
+
         # Connect to the database using the retrieved connection string
         conn = pyodbc.connect(connection_string)
 
