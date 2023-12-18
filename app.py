@@ -15,7 +15,7 @@ class Product:
 def list_products():
     try:
         # Retrieve the Azure SQL Database connection string from the environment variable
-        connection_string = os.environ.get('connectionString')
+        connection_string = 'Driver={ODBC Driver 18 for SQL Server};Server=tcp:pyptk-server.database.windows.net,1433;Database=pyptk;Uid=sqladmin;Pwd=Testit123;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;'
 
         print("Azure SQL Database Connection String:", connection_string)
 
